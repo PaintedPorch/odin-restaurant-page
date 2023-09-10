@@ -1,0 +1,22 @@
+JS Logic:
+
+index.js will contain the loading logic and will handle all the imports. This
+file will be used to gather all recourses and load them with as little as possible
+extra code
+
+home.js will be the default loading standard and it will contain the layout for 
+the home page. This layout will be placed within a function to make it which will
+be exported and then used in index.js
+
+menu.js works the same but for the menu section
+
+contact.js works the same but for the content section
+
+------
+
+A handy tactic for production is making the layout in HTML first and then creating
+it in JS, after that you can export the JS result and import it into index.js.
+The Home-page navbar's option will contain event listeners that will activate the
+functions to its same-named page, pressing Menu should use the function exported
+from menu.js. We can use a variable to make this work and save which page is pressed
+or we can try to make home.js the default load state.
