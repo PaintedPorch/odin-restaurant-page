@@ -1,8 +1,8 @@
 * {
-    --header_bg: rgba(0, 0, 0, 0.919);
-    --other_bg: rgba(0, 0, 0, 0.699);
-    --footer_bg: rgba(0, 0, 0, 0.509);
-    outline: 1px solid red;
+    --header_bg: rgba(0, 0, 0, 0.879);
+    --other_bg: rgba(0, 0, 0, 0.789);
+    --footer_bg: rgba(0, 0, 0, 0.569);
+    /* outline: 1px solid red; */
     color: white;
 }
 
@@ -26,8 +26,8 @@
 
 #content {
     display: grid;
-    grid-template-rows: 4fr 12fr 1fr;
-    background-image: url(./../assets/images/test.jpg);
+    grid-template-rows: 3.5fr 12fr 1fr;
+    background-image: url(./../assets/images/sample.jpg);
     background-size: 100% 100%;
     min-height: 100vh;
     image-resolution: from-image;
@@ -40,33 +40,34 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
 #title {
-    padding: 40px 15px;
+    padding: 40px 10px 10px 10px;
     font-size: 5rem;
     font-family: "Great Vibes", "Rochester";
     word-spacing: 5px;
 }
 
 #navoptions {
-    display: grid;
-    grid-template-columns: repeat(1fr, 3);
-    width: 30%;
+    width: 325px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .option {
     font-size: 1.5rem;
+    width: 33.3333%;
+    text-align: center;
 }
-
-.option:nth-child(1) {
-    grid-column: 1 / 2;
-}
-.option:nth-child(2) {
-    grid-column: 2 / 3;
-}
-.option:nth-child(3) {
-    grid-column: 3 / -1;
+.option:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .3s;
+    text-decoration: underline;
 }
 
 #main {
@@ -89,8 +90,8 @@
 }
 
 #centerimg {
-    height: 300px;
-    width: 300px;
+    height: 275px;
+    width: 275px;
     background-color: white;
     border-radius: 50%;
     display: flex;
@@ -105,8 +106,16 @@
 }
 
 #centertext, #subtext {
-    margin: 10% 25px 0 25px;
     text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#centertext {
+    margin: 10% 25px 0 25px;
+}
+#subtext {
+    margin: 0 25px;
 }
 
 #footer {
@@ -116,4 +125,10 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+@media (max-width: 850px) {
+    #content {
+        background-image: url(./../assets/images/blub.jpg);
+    }
 }
