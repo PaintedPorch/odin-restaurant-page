@@ -36,7 +36,39 @@ export default function createHome() {
 
     // Make main
 
+    const main = document.createElement('div'); // create header
+    main.id = "main";   
+
+    const centerDiv = document.createElement('div');
+    centerDiv.id = "centerdiv";
+
+    let centerText = document.createElement('p');
+    centerText.id = "centertext";
+    centerText.textContent = "Bringing delicate flavours to your palette since 1957";
+
+    centerDiv.appendChild(centerText);
+
+    const centerImg = document.createElement('div');
+    centerImg.id = "centerimg";
+
+    let img = document.createElement('img');
+    img.id = "picture";
+    img.src = "./../src/assets/images/person_stock_photo.jpeg";
+    img.alt = "stock_photo_person";
+
+    centerImg.appendChild(img);
+
+    centerDiv.appendChild(centerImg);
+
+    let subText = document.createElement('p');
+    subText.id = "subtext";
+    subText.textContent = "Visit us at Painted Porch 445, Lorem Ipsum";
+
+    centerDiv.appendChild(subText);
+
+    main.appendChild(centerDiv);
     
+    contentField.appendChild(main);
 
     // Make footer
 }
@@ -45,14 +77,6 @@ export default function createHome() {
 /* 
 Content to make:
 
-<div id="header">
-    <h1 id="title">La Saveur</h1>
-    <div id="navoptions">
-        <div class="option">Home</div>
-        <div class="option">Menu</div>
-        <div class="option">Contact</div>
-    </div>
-</div>
 <div id="main">
     <div id="centerdiv">
         <p id="centertext">Bringing delicate flavours to your palette since 1957</p>
