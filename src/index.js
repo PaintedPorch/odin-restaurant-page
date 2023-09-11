@@ -2,8 +2,8 @@ import './css/styles.css';
 import './css/meyerReset.css';
 import GHLogo from './assets/images/github_logo.png';
 import StockPerson from './assets/images/person_stock_photo.jpeg';
-import RestaurantBg from './assets/images/restaurant_bg.jpg';
-import createHome from './../src/home.js'; 
+// import createHome from './../src/home.js'; 
+// import createMain from './../src/menu.js';
 
 // Image region
 
@@ -18,18 +18,16 @@ githubLogo.alt = "github-logo: https://github.com/PaintedPorch";
 
 // End image region
 
-const restaurantBg = new Image();
-restaurantBg.src = RestaurantBg; // Use in all files
-
 // Start module-support code
 
-const contentField = document.getElementById("content");
+// const contentField = document.getElementById("content");
 
-function wipeContent() { // Resets content. runs before every content appendation
-    contentField.innerHTML = "";
-}
+// function wipeContent() { // Resets content. runs before every content appendation
+//     contentField.innerHTML = "";
+// }
 
 // End module-support code
 
-wipeContent();
-createHome();
+// wipeContent();
+// createHome();
+// createMain();

@@ -63,11 +63,6 @@ export default function createHome() {
     const centerImg = document.createElement('div');
     centerImg.id = "centerimg";
 
-    // let img = document.createElement('img');
-    // img.id = "picture";
-    // img.src = "./../src/assets/images/person_stock_photo.jpeg";
-    // img.alt = "stock_photo_person";
-
     centerImg.appendChild(stockPerson);
 
     centerDiv.appendChild(centerImg);
