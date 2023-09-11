@@ -1,4 +1,16 @@
+import StockPerson from './assets/images/person_stock_photo.jpeg';
+import GHLogo from './assets/images/github_logo.png';
+
+const stockPerson = new Image();
+stockPerson.src = StockPerson; 
+stockPerson.id = "picture";
+const githubLogo = new Image();
+githubLogo.src = GHLogo; 
+githubLogo.id = "github_logo";
+githubLogo.alt = "github-logo: https://github.com/PaintedPorch";
+
 export default function createHome() { 
+
     const contentField = document.getElementById("content");
     // Make header
 
@@ -51,12 +63,12 @@ export default function createHome() {
     const centerImg = document.createElement('div');
     centerImg.id = "centerimg";
 
-    let img = document.createElement('img');
-    img.id = "picture";
-    img.src = "./../src/assets/images/person_stock_photo.jpeg";
-    img.alt = "stock_photo_person";
+    // let img = document.createElement('img');
+    // img.id = "picture";
+    // img.src = "./../src/assets/images/person_stock_photo.jpeg";
+    // img.alt = "stock_photo_person";
 
-    centerImg.appendChild(img);
+    centerImg.appendChild(stockPerson);
 
     centerDiv.appendChild(centerImg);
 
@@ -71,23 +83,15 @@ export default function createHome() {
     contentField.appendChild(main);
 
     // Make footer
+
+    const footer = document.createElement('div');
+    footer.id = "footer";
+
+    let copyright = document.createElement('p');
+    copyright.textContent = "Copyright © 2023 Painted Porch";
+
+    footer.appendChild(copyright);
+    footer.appendChild(githubLogo);
+
+    contentField.appendChild(footer);
 }
-
-
-/* 
-Content to make:
-
-<div id="main">
-    <div id="centerdiv">
-        <p id="centertext">Bringing delicate flavours to your palette since 1957</p>
-        <div id="centerimg">
-            <img id="picture" src="./../src/assets/images/person_stock_photo.jpeg" alt="stock_photo_person">
-        </div>
-        <p id="subtext">Visit us at Painted Porch 445, Lorem Ipsum</p>
-    </div>
-</div>
-<div id="footer">
-    <p class="copyright">Copyright &#169; 2023 Painted Porch</p>
-    <img src="./../src/assets/images/github_logo.png" alt="github-logo: https://github.com/PaintedPorch" class="github_logo">
-</div>
-*/

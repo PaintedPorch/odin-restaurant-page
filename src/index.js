@@ -5,11 +5,18 @@ import StockPerson from './assets/images/person_stock_photo.jpeg';
 import RestaurantBg from './assets/images/restaurant_bg.jpg';
 import createHome from './../src/home.js'; 
 
-const githubLogo = new Image();
-githubLogo.src = GHLogo; // This can now be appended, use in all files
+// Image region
 
 const stockPerson = new Image();
-stockPerson.src = StockPerson; // Use in home.js
+stockPerson.src = StockPerson; 
+stockPerson.id = "picture";
+
+const githubLogo = new Image();
+githubLogo.src = GHLogo; 
+githubLogo.id = "github_logo";
+githubLogo.alt = "github-logo: https://github.com/PaintedPorch";
+
+// End image region
 
 const restaurantBg = new Image();
 restaurantBg.src = RestaurantBg; // Use in all files

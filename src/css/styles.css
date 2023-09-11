@@ -127,6 +127,19 @@
     gap: 10px;
 }
 
+#github_logo {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+/* 
+Space for styles to place on the navbar items when they're active
+
+Active Nav Element Styling - Place Below The Comment
+
+*/
+
 @media (max-width: 850px) {
     #content {
         background-image: url(./../assets/images/blub.jpg);
