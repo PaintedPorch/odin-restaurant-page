@@ -4,6 +4,7 @@ import GHLogo from './assets/images/github_logo.png';
 import StockPerson from './assets/images/person_stock_photo.jpeg';
 // import createHome from './../src/home.js'; 
 // import createMain from './../src/menu.js';
+// import createWines from './../src/wines.js';
 
 // Image region
 
@@ -31,3 +32,4 @@ githubLogo.alt = "github-logo: https://github.com/PaintedPorch";
 // wipeContent();
 // createHome();
 // createMain();
+// createWines();

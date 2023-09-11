@@ -9,7 +9,7 @@ githubLogo.src = GHLogo;
 githubLogo.id = "github_logo";
 githubLogo.alt = "github-logo: https://github.com/PaintedPorch";
 
-export default function createMain() {
+export default function createWines() {
     const contentField = document.getElementById("content");
     // Make header
 
@@ -57,61 +57,61 @@ export default function createMain() {
     const menu = document.createElement('div');
     menu.id = "menu";
 
-    const entree = document.createElement('div');
-    entree.id = "entree";
+    const red = document.createElement('div');
+    red.id = "red";
 
-    let entreeTitle = document.createElement('h3');
-    entreeTitle.id = "entreetitle";
-    entreeTitle.textContent = "Entrée";
+    let redTitle = document.createElement('h3');
+    redTitle.id = "redtitle";
+    redTitle.textContent = "Red";
 
-    entree.appendChild(entreeTitle);
+    red.appendChild(redTitle);
 
-    let entreeOptionList = [];
+    let redOptionList = [];
 
     for (let i = 0; i < 3; i++) {
-        let entreeDish = document.createElement('p');
-        entreeDish.classList.add("entreedish");
-        entreeOptionList.push(entreeDish);
+        let redWine = document.createElement('p');
+        redWine.classList.add("redwine");
+        redOptionList.push(redWine);
     }
 
-    entreeOptionList[0].textContent = "Sea Bream";
-    entreeOptionList[1].textContent = "Sweetbread";
-    entreeOptionList[2].textContent = "Pommes Tsarin";
+    redOptionList[0].textContent = "Châteauneuf du Pape Le Parvis 2017";
+    redOptionList[1].textContent = "Domaine Raspail-Ay's Gigondas 2020";
+    redOptionList[2].textContent = "Domaine Aupy Saumur Red 2018";
 
-    for (let j = 0; j < entreeOptionList.length; j++) {
-        entree.appendChild(entreeOptionList[j]);
+    for (let j = 0; j < redOptionList.length; j++) {
+        red.appendChild(redOptionList[j]);
     }
 
-    menu.append(entree);
+    menu.append(red);
 
     //
 
-    const mainDish = document.createElement('div');
-    mainDish.id = "mainDish";
+    const white = document.createElement('div');
+    white.id = "mainDish";
 
-    let mainTitle = document.createElement('h3');
-    mainTitle.id = "mainDishTitle";
-    mainTitle.textContent = "Main";
+    let whiteTitle = document.createElement('h3');
+    whiteTitle.id = "whitetitle";
+    whiteTitle.textContent = "White";
 
-    mainDish.appendChild(mainTitle);
+    white.appendChild(whiteTitle);
 
-    let mainOptionList = [];
+    let whiteOptionList = [];
 
-    for (let i = 0; i < 3; i++) {
-        let mainDishText = document.createElement('p');
-        mainDishText.classList.add("mainDish");
-        mainOptionList.push(mainDishText);
+    for (let i= 0; i < 3; i++) {
+        let whiteWineText = document.createElement('p');
+        whiteWineText.classList.add("whitewine");
+        whiteOptionList.push(whiteWineText);
     }
 
-    mainOptionList[0].textContent = "Turbot";
-    mainOptionList[1].textContent = "Anjou Pigeon";
-    mainOptionList[2].textContent = "Wagyu A5 Sirloin";
+    whiteOptionList[0].textContent = "Vermentino France Ludo Le Francais";
+    whiteOptionList[1].textContent = "Sauvignon Blanc Lulu Le Francais";
+    whiteOptionList[2].textContent = "Hungerfird Hill Chardonnay";
 
-    for (let j = 0; j < mainOptionList.length; j++) {
-        mainDish.appendChild(mainOptionList[j]);
+    for (let j = 0; j < whiteOptionList.length; j++) {
+        white.appendChild(whiteOptionList[j]);
     }
 
-    menu.appendChild(mainDish);
+    menu.appendChild(white);
 
     //
 
@@ -128,13 +128,13 @@ export default function createMain() {
 
     for (let i = 0; i < 3; i++) {
         let dessertOptionText = document.createElement('p');
-        dessertOptionText.classList.add("mainDish");
+        dessertOptionText.classList.add("dessertWine");
         dessertOptionList.push(dessertOptionText);
     }
 
-    dessertOptionList[0].textContent = "Bergamot";
-    dessertOptionList[1].textContent = "Lychee Souffle";
-    dessertOptionList[2].textContent = "Cheese Selection";
+    dessertOptionList[0].textContent = "Domaine Bru-Baché Jurançon Cuvée Jean";
+    dessertOptionList[1].textContent = "Chateau de Fesles Bonnezeaux";
+    dessertOptionList[2].textContent = "Domaine Marcel Deiss Altenberg de Bergheim";
 
     for (let j = 0; j < dessertOptionList.length; j++) {
         dessert.appendChild(dessertOptionList[j]);

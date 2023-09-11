@@ -28,7 +28,7 @@ export default function createHome() {
 
     let navOptionList = [];
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
         let option = document.createElement('div');
         option.classList.add("option");
         navOptionList.push(option);
@@ -36,7 +36,8 @@ export default function createHome() {
 
     navOptionList[0].textContent = "Home";
     navOptionList[1].textContent = "Menu";
-    navOptionList[2].textContent = "Contact";
+    navOptionList[2].textContent = "Wines";
+    navOptionList[3].textContent = "Contact";
 
     for (let j = 0; j < navOptionList.length; j++) {
         navOptions.appendChild(navOptionList[j]);
