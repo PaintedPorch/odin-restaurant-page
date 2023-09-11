@@ -5,6 +5,7 @@ import StockPerson from './assets/images/person_stock_photo.jpeg';
 // import createHome from './../src/home.js'; 
 // import createMain from './../src/menu.js';
 // import createWines from './../src/wines.js';
+import createContact from './../src/contact.js';
 
 // Image region
 
@@ -21,15 +22,18 @@ githubLogo.alt = "github-logo: https://github.com/PaintedPorch";
 
 // Start module-support code
 
-// const contentField = document.getElementById("content");
+const contentField = document.getElementById("content");
 
-// function wipeContent() { // Resets content. runs before every content appendation
-//     contentField.innerHTML = "";
-// }
+function wipeContent() { // Resets content. runs before every content appendation
+    contentField.innerHTML = "";
+}
 
 // End module-support code
 
-// wipeContent();
+// Let's add logic to shift tabs on click and add active element classes
+
+wipeContent();
 // createHome();
 // createMain();
 // createWines();
+createContact();
