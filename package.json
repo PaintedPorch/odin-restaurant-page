@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --mode=development",
     "start": "webpack --mode=development && webpack-dev-server --open --mode=development",
-    "lint": "eslint src --ext .js"
+    "lint": "eslint src --ext .js",
+    "deploy-demo": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
