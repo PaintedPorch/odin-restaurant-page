@@ -25,7 +25,7 @@ export default function createHome() {
 
     let midText = document.createElement('p');
     midText.id = "midtext";
-    midText.textContent = "We have had the honor to receive a Michelin Star in 2011";
+    midText.textContent = "La Saveur's mission is to let our guests experience the wonders of the art of French gastronomy. This mission has since 2011 given us the honor to hold a Michelin Star.";
 
     centerDiv.appendChild(midText);
 
