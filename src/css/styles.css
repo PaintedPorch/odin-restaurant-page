@@ -30,6 +30,7 @@
     background-image: url(./../assets/images/large-screen-bg.jpg);
     background-size: 100% 100%;
     min-height: 100vh;
+    max-height: 100vh;
 }
 
 #header {
@@ -94,7 +95,7 @@
 
 #centertext, #subtext, #midtext, #submidtext {
     text-align: center;
-    font-size: 1.225rem;
+    font-size: 1.25rem;
     font-weight: 600;
     width: 80%;
     margin: 5% 0;
@@ -114,7 +115,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 22.5px;
+    gap: 17.5px;
 }
 
 #entree, #mainDish, #dessert, #red, #white {
@@ -122,13 +123,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 7.5px;
+    gap: 5px;
     text-align: center;
 }
 
 #entreetitle, #mainDishTitle ,#desserttitle, #redtitle, #whitetitle {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 2.25rem;
+    margin-bottom: 5px;
 }
 
 /* End Menu Exclusive Styling */
