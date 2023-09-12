@@ -66,9 +66,8 @@
 }
 .option:hover {
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.15);
     transition: .3s;
-    text-decoration: underline;
 }
 
 #main {
