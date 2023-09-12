@@ -1,9 +1,5 @@
-import StockPerson from './assets/images/person_stock_photo.jpeg';
 import GHLogo from './assets/images/github_logo.png';
 
-const stockPerson = new Image();
-stockPerson.src = StockPerson; 
-stockPerson.id = "picture";
 const githubLogo = new Image();
 githubLogo.src = GHLogo; 
 githubLogo.id = "github_logo";
@@ -27,12 +23,11 @@ export default function createHome() {
 
     centerDiv.appendChild(centerText);
 
-    const centerImg = document.createElement('div');
-    centerImg.id = "centerimg";
+    let midText = document.createElement('p');
+    midText.id = "midtext";
+    midText.textContent = "We have had the honor to receive a Michelin Star in 2011";
 
-    centerImg.appendChild(stockPerson);
-
-    centerDiv.appendChild(centerImg);
+    centerDiv.appendChild(midText);
 
     let subText = document.createElement('p');
     subText.id = "subtext";

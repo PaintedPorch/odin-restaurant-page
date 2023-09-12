@@ -14,6 +14,8 @@ const menu = document.querySelector(".menuOption");
 const wines = document.querySelector(".wineOption");
 const contact = document.querySelector(".contactOption");
 
+home.classList.add("activeOption");
+
 // End module-support code
 
 // Let's add logic to shift tabs on click and add active element classes

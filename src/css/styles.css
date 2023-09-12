@@ -91,31 +91,14 @@
 
 /* Start Home Exclusive Styling */
 
-#centerimg {
-    height: 275px;
-    width: 275px;
-    background-color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#picture {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-}
-
-#centertext, #subtext {
+#centertext, #subtext, #midtext, #submidtext {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 600;
+    width: 80%;
+    margin: 10px 0;
 }
 
-#centertext {
-    margin: 10% 25px 0 25px;
-}
 #subtext {
     margin: 0 25px;
 }
