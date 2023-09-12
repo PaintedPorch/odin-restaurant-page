@@ -1,39 +1,24 @@
 import './css/styles.css';
 import './css/meyerReset.css';
-import GHLogo from './assets/images/github_logo.png';
-import StockPerson from './assets/images/person_stock_photo.jpeg';
-// import createHome from './../src/home.js'; 
-// import createMain from './../src/menu.js';
-// import createWines from './../src/wines.js';
+import createHome from './../src/home.js'; 
+import createMenu from './../src/menu.js';
+import createWines from './../src/wines.js';
 import createContact from './../src/contact.js';
-
-// Image region
-
-const stockPerson = new Image();
-stockPerson.src = StockPerson; 
-stockPerson.id = "picture";
-
-const githubLogo = new Image();
-githubLogo.src = GHLogo; 
-githubLogo.id = "github_logo";
-githubLogo.alt = "github-logo: https://github.com/PaintedPorch";
-
-// End image region
 
 // Start module-support code
 
-const contentField = document.getElementById("content");
+createHome();
 
-function wipeContent() { // Resets content. runs before every content appendation
-    contentField.innerHTML = "";
-}
+const home = document.querySelector(".homeOption");
+const menu = document.querySelector(".menuOption");
+const wines = document.querySelector(".wineOption");
+const contact = document.querySelector(".contactOption");
 
 // End module-support code
 
 // Let's add logic to shift tabs on click and add active element classes
 
-wipeContent();
-// createHome();
-// createMain();
-// createWines();
-createContact();
+home.addEventListener("click", createHome);
+menu.addEventListener("click", createMenu);
+wines.addEventListener("click", createWines);
+contact.addEventListener("click", createContact);

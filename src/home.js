@@ -12,45 +12,11 @@ githubLogo.alt = "github-logo: https://github.com/PaintedPorch";
 export default function createHome() { 
 
     const contentField = document.getElementById("content");
-    // Make header
-
-    const header = document.createElement('div'); // create header
-    header.id = "header";
-
-    let title = document.createElement('h1'); // create title
-    title.id = "title";
-    title.textContent = "La Saveur";
-
-    header.appendChild(title);
-
-    const navOptions = document.createElement('div'); // create navoptions
-    navOptions.id = "navoptions";
-
-    let navOptionList = [];
-
-    for (let i = 0; i < 4; i++) {
-        let option = document.createElement('div');
-        option.classList.add("option");
-        navOptionList.push(option);
-    }
-
-    navOptionList[0].textContent = "Home";
-    navOptionList[1].textContent = "Menu";
-    navOptionList[2].textContent = "Wines";
-    navOptionList[3].textContent = "Contact";
-
-    for (let j = 0; j < navOptionList.length; j++) {
-        navOptions.appendChild(navOptionList[j]);
-    }
-
-    header.append(navOptions);
-
-    contentField.appendChild(header);
 
     // Make main
 
-    const main = document.createElement('div'); // create header
-    main.id = "main";   
+    const main = document.querySelector("#main");
+    main.innerHTML = "";
 
     const centerDiv = document.createElement('div');
     centerDiv.id = "centerdiv";
@@ -80,14 +46,15 @@ export default function createHome() {
 
     // Make footer
 
-    const footer = document.createElement('div');
-    footer.id = "footer";
+    let imgCounter = 0;
 
-    let copyright = document.createElement('p');
-    copyright.textContent = "Copyright © 2023 Painted Porch";
+    const footer = document.querySelector("#footer");
 
-    footer.appendChild(copyright);
-    footer.appendChild(githubLogo);
+    if (imgCounter == 0) {
+        footer.appendChild(githubLogo);
+    }
 
     contentField.appendChild(footer);
+
+    imgCounter++;
 }
