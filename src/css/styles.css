@@ -194,7 +194,7 @@ Space for styles to place on the navbar items when they're active
 */
 
 .activeOption {
-    border: 2px solid white;
+    outline: 2px solid white;
 }
 
 @media (max-width: 550px) {
