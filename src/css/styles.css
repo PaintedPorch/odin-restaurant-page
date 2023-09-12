@@ -27,7 +27,7 @@
 #content {
     display: grid;
     grid-template-rows: 4fr 12fr 1fr;
-    background-image: url(./../assets/images/sample.jpg);
+    background-image: url(./../assets/images/restaurant_bg.jpg);
     background-size: 100% 100%;
     min-height: 100vh;
     image-resolution: from-image;
@@ -56,6 +56,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    gap: 20px;
 }
 
 .option {
@@ -195,6 +196,6 @@ Space for styles to place on the navbar items when they're active
 
 @media (max-width: 850px) {
     #content {
-        background-image: url(./../assets/images/blub.jpg);
+        background-image: url(./../assets/images/small-screen-bg.jpg);
     }
 }

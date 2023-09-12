@@ -1,9 +1,5 @@
-import StockPerson from './assets/images/person_stock_photo.jpeg';
 import GHLogo from './assets/images/github_logo.png';
 
-const stockPerson = new Image();
-stockPerson.src = StockPerson; 
-stockPerson.id = "picture";
 const githubLogo = new Image();
 githubLogo.src = GHLogo; 
 githubLogo.id = "github_logo";
