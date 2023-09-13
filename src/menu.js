@@ -78,7 +78,7 @@ export default function createMain() {
     //
 
     const dessert = document.createElement('div');
-    dessert.id = "mainDish";
+    dessert.id = "dessert";
 
     let dessertTitle = document.createElement('h3');
     dessertTitle.id = "desserttitle";
@@ -90,7 +90,7 @@ export default function createMain() {
 
     for (let i = 0; i < 3; i++) {
         let dessertOptionText = document.createElement('p');
-        dessertOptionText.classList.add("mainDish");
+        dessertOptionText.classList.add("dessertDish");
         dessertOptionList.push(dessertOptionText);
     }
 

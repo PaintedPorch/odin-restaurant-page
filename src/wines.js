@@ -49,7 +49,7 @@ export default function createWines() {
     //
 
     const white = document.createElement('div');
-    white.id = "mainDish";
+    white.id = "white";
 
     let whiteTitle = document.createElement('h3');
     whiteTitle.id = "whitetitle";
@@ -78,7 +78,7 @@ export default function createWines() {
     //
 
     const dessert = document.createElement('div');
-    dessert.id = "mainDish";
+    dessert.id = "dessert";
 
     let dessertTitle = document.createElement('h3');
     dessertTitle.id = "desserttitle";

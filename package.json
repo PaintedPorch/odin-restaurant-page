@@ -7,6 +7,7 @@
     "build": "webpack --mode=development",
     "build-production": "webpack --mode=production",
     "start": "webpack --mode=development && webpack-dev-server --open --mode=development",
+    "start-production": "webpack --mode=production && webpack-dev-server --open --mode=production",
     "lint": "eslint src --ext .js",
     "deploy-demo": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
   },
